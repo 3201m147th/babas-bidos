@@ -37,9 +37,9 @@ export function Navbar() {
         <div className="flex items-center gap-6 md:gap-8 font-sans font-medium text-sm md:text-base">
           <button onClick={() => scrollTo("menu")} className="text-foreground hover:text-primary transition-colors">Menu</button>
           <button onClick={() => scrollTo("story")} className="text-foreground hover:text-primary transition-colors">Our Story</button>
-          <button onClick={() => scrollTo("order")} className="bg-primary text-primary-foreground px-5 py-2 rounded-full font-bold uppercase tracking-wide hover:bg-primary/90 transition-all hover:shadow-[0_0_15px_rgba(252,163,17,0.4)]">
+          <a href="https://order.toasttab.com/online/babas-bidos" target="_blank" rel="noopener noreferrer" className="bg-primary text-primary-foreground px-5 py-2 rounded-full font-bold uppercase tracking-wide hover:bg-primary/90 transition-all hover:shadow-[0_0_15px_rgba(252,163,17,0.4)]">
             Order Online
-          </button>
+          </a>
         </div>
       </div>
     </nav>

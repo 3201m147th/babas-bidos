@@ -14,7 +14,7 @@ export function Order() {
         </p>
         
         <a 
-          href="https://babasbidos.com/order" 
+          href="https://order.toasttab.com/online/babas-bidos" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground font-display text-3xl uppercase tracking-widest px-12 py-5 rounded-full transition-all hover:scale-105 hover:bg-primary/90 glow-box"
