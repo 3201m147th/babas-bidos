@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "ffunp7or6MFhm3D8lD1jX"
+uri = "file://artifacts/bidos-restaurant/src/assets/cheesesteak.png"
+type = "image"
+title = "Dramatic cheesesteak photo"
+
+[[generated]]
+id = "xWDtIaoQ5LXdi51DpSxKF"
+uri = "file://artifacts/bidos-restaurant/src/assets/burger.png"
+type = "image"
+title = "Dramatic burger photo"
+
+[[generated]]
+id = "DBxIc6nfB27VGY6f_3N6z"
+uri = "file://artifacts/bidos-restaurant/src/assets/wings.png"
+type = "image"
+title = "Dramatic wings photo"
+
+[[generated]]
+id = "dTQ-Z1INrVPlK4OsihGol"
+uri = "file://artifacts/bidos-restaurant/src/assets/lemonade.png"
+type = "image"
+title = "Dramatic lemonade photo"
