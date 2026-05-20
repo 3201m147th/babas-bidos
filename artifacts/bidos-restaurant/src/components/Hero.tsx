@@ -37,7 +37,7 @@ export function Hero() {
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 font-medium animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-300">
-          Smoky, warm, and unapologetic. Street food swagger meets neighborhood warmth.
+          Smoky, warm, and unapologetic.
         </p>
 
         <button 
