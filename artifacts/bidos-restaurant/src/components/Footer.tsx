@@ -15,7 +15,7 @@ export function Footer() {
         </h3>
         
         <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm text-muted-foreground mt-8">
-          <p>&copy; {new Date().getFullYear()} Bido's. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Babas Bido's. All rights reserved.</p>
           <a href="https://babasbidos.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             babasbidos.com
           </a>
