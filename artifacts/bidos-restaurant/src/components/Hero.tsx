@@ -9,33 +9,6 @@ export function Hero() {
     }
   };
 
-  const TICKER = [
-    "Philly Cheesesteak",
-    "•",
-    "Buffalo Wings",
-    "•",
-    "Smash Burgers",
-    "•",
-    "Chicago Italian Beef",
-    "•",
-    "Rice Bowls",
-    "•",
-    "Loaded Fries",
-    "•",
-    "Catfish",
-    "•",
-    "Frozen Lemonade",
-    "•",
-    "Party Wings",
-    "•",
-    "Gyro Plate",
-    "•",
-    "Nashville Hot",
-    "•",
-    "Chicken Tenders",
-    "•",
-  ];
-
   return (
     <section className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-background">
       <div className="absolute inset-0 z-0">
@@ -88,7 +61,7 @@ export function Hero() {
 
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
         <button
-          onClick={() => scrollTo("marquee")}
+          onClick={() => scrollTo("story")}
           className="text-primary/50 hover:text-primary transition-colors"
         >
           <svg
@@ -105,19 +78,6 @@ export function Hero() {
             <path d="m19 12-7 7-7-7" />
           </svg>
         </button>
-      </div>
-
-      <div id="marquee" className="absolute bottom-[-36px] left-0 right-0 z-10 border-y border-primary/20 bg-primary/5 backdrop-blur-sm py-3 overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee gap-8">
-          {[...TICKER, ...TICKER].map((item, i) => (
-            <span
-              key={i}
-              className={`font-display text-lg uppercase tracking-widest ${item === "•" ? "text-primary" : "text-white/60"}`}
-            >
-              {item}
-            </span>
-          ))}
-        </div>
       </div>
     </section>
   );
