@@ -1,12 +1,5 @@
 import flavorPath from "@assets/E4CDAD29-FDF7-41DA-9D41-4D0BCF0A83DD_1779284615864.png";
 
-const STATS = [
-  { value: "3+", label: "Years in the Community" },
-  { value: "50+", label: "Items on the Menu" },
-  { value: "100pc", label: "Wing Party Packs" },
-  { value: "0", label: "Compromises on Flavor" },
-];
-
 export function Story() {
   return (
     <section id="story" className="py-24 md:py-32 bg-card relative overflow-hidden">
@@ -56,21 +49,6 @@ export function Story() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
-          {STATS.map((s) => (
-            <div
-              key={s.label}
-              className="text-center py-8 px-4 rounded-2xl bg-background border border-white/8 hover:border-primary/30 transition-colors"
-            >
-              <div className="font-display text-4xl md:text-5xl text-primary glow-text mb-2">
-                {s.value}
-              </div>
-              <div className="text-muted-foreground text-sm uppercase tracking-wider font-sans font-medium">
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
