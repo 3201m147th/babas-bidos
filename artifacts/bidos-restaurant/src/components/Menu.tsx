@@ -4,7 +4,6 @@ const CATEGORIES = [
   {
     id: "philly-steaks",
     label: "Philly Steaks",
-    emoji: "🥩",
     note: "All sandwiches served with fries",
     items: [
       { name: "Super Philly", price: "$14.99", desc: "Grilled steak or chicken with green peppers, mushrooms, onion, lettuce and mozzarella cheese." },
@@ -18,7 +17,6 @@ const CATEGORIES = [
   {
     id: "chicago-style",
     label: "Chicago Style",
-    emoji: "🌭",
     note: "Classic Chicago-inspired subs",
     items: [
       { name: "Italian Beef", price: "$11.99", desc: "Our original Chicago-style Italian beef slow-roasted, thinly sliced, seasoned with Italian spices and dipped in au jus. Come with hot or mild peppers." },
@@ -33,7 +31,6 @@ const CATEGORIES = [
   {
     id: "sandwiches",
     label: "Sandwiches",
-    emoji: "🍗",
     note: "All sandwiches served with fries",
     items: [
       { name: "Crispy Chicken — Single", price: "$9.99", desc: "Crispy fried chicken breast with lettuce, tomato, pickles and mayo." },
@@ -50,7 +47,6 @@ const CATEGORIES = [
   {
     id: "burgers",
     label: "Burgers",
-    emoji: "🍔",
     note: "All burgers served with fries",
     items: [
       { name: "Italian Beef Burger", price: "Single $10.99 / Double $12.99 / Triple $14.99", desc: "100% fresh patties topped with Italian corned beef and American cheese with our signature Bido's burger sauce and a slice of melty American cheese." },
@@ -62,7 +58,6 @@ const CATEGORIES = [
   {
     id: "rice-bowls",
     label: "Rice Bowls",
-    emoji: "🍚",
     note: "A plate of rice topped with your choice of meat — loaded with jalapeños, white sauce, onion, lettuce & tomato",
     items: [
       { name: "Chicken Rice Bowl", price: "$11.99", desc: "Rice loaded with seasoned chicken, jalapeños, white sauce, onion, lettuce & tomato." },
@@ -74,7 +69,6 @@ const CATEGORIES = [
   {
     id: "loaded",
     label: "Loaded",
-    emoji: "🧀",
     note: "A full plate loaded with the good stuff",
     items: [
       { name: "Loaded Fries", price: "$9.99", desc: "A full plate of fries topped with nacho cheese, jalapeños, sour cream, lettuce and tomato." },
@@ -84,7 +78,6 @@ const CATEGORIES = [
   {
     id: "wings",
     label: "Wings",
-    emoji: "🔥",
     note: "Served with fries",
     items: [
       { name: "3 pcs Wings", price: "$6.99", desc: "Three crispy wings, your choice of sauce." },
@@ -99,7 +92,6 @@ const CATEGORIES = [
   {
     id: "party-wings",
     label: "Party Wings",
-    emoji: "🎉",
     note: "For the big occasions",
     items: [
       { name: "4 pcs Party Wings", price: "$5.99", desc: "Four meaty party wings sauced up and ready." },
@@ -113,7 +105,6 @@ const CATEGORIES = [
   {
     id: "tenders-nuggets",
     label: "Tenders & Nuggets",
-    emoji: "🍤",
     note: "Served with fries",
     items: [
       { name: "Chicken Tenders 3 pcs", price: "$7.99", desc: "Three golden crispy chicken tenders with your dipping sauce." },
@@ -128,7 +119,6 @@ const CATEGORIES = [
   {
     id: "seafood",
     label: "Seafood",
-    emoji: "🐟",
     note: "Baba's signature seafood",
     items: [
       { name: "Catfish Fillet 2 pcs", price: "$8.99", desc: "Golden fried catfish fillets, light and flaky." },
@@ -149,7 +139,6 @@ const CATEGORIES = [
   {
     id: "salads",
     label: "Salads",
-    emoji: "🥗",
     note: "Fresh and crisp",
     items: [
       { name: "Regular Salad", price: "$6.99", desc: "Fresh garden salad with tomato, cucumber, onion and your choice of dressing." },
@@ -160,7 +149,6 @@ const CATEGORIES = [
   {
     id: "sides",
     label: "Sides & More",
-    emoji: "🍟",
     note: "Round out your meal",
     items: [
       { name: "Pizza Puff 1 pc", price: "$3.99", desc: "Deep-fried golden dough stuffed with pizza fillings. A Chicago classic." },
@@ -178,7 +166,6 @@ const CATEGORIES = [
   {
     id: "pick2",
     label: "Pick 2 Deals",
-    emoji: "💰",
     note: "Mix & match combos",
     items: [
       {
@@ -229,8 +216,7 @@ export function Menu() {
                     : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-white/8"
                   }`}
               >
-                <span>{cat.emoji}</span>
-                <span>{cat.label}</span>
+                {cat.label}
               </button>
             ))}
           </div>
@@ -240,7 +226,7 @@ export function Menu() {
           <div className="mb-10 flex items-end justify-between border-b border-white/8 pb-5">
             <div>
               <h3 className="font-display text-4xl md:text-5xl text-white uppercase tracking-wide">
-                {active.emoji} {active.label}
+                {active.label}
               </h3>
               {active.note && (
                 <p className="text-primary/70 text-sm font-sans mt-1.5 italic">{active.note}</p>
