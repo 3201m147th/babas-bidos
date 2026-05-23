@@ -42,9 +42,10 @@ export function Hours() {
                 <div>
                   <p className="text-white font-semibold font-sans mb-0.5">Baba's Bido's</p>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Chicago, IL<br />
+                    3201 147th St<br />
+                    Midlothian, IL 60445<br />
                     <a
-                      href="https://maps.google.com/?q=babas+bidos+chicago"
+                      href="https://maps.google.com/?q=3201+147th+St,+Midlothian,+IL+60445"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline"
