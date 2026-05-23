@@ -53,12 +53,6 @@ export function Navbar() {
               Menu
             </button>
             <button
-              onClick={() => scrollTo("specials")}
-              className="text-muted-foreground hover:text-primary transition-colors"
-            >
-              Specials
-            </button>
-            <button
               onClick={() => scrollTo("story")}
               className="text-muted-foreground hover:text-primary transition-colors"
             >
@@ -105,7 +99,7 @@ export function Navbar() {
             alt="Bido's Logo"
             className="h-20 w-20 object-contain mb-2"
           />
-          {["menu", "specials", "story", "hours", "order"].map((id) => (
+          {["menu", "story", "hours", "order"].map((id) => (
             <button
               key={id}
               onClick={() => scrollTo(id)}
