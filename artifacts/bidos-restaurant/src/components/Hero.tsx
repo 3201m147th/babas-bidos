@@ -107,7 +107,7 @@ export function Hero() {
         </button>
       </div>
 
-      <div id="marquee" className="absolute bottom-0 left-0 right-0 z-10 border-t border-primary/20 bg-primary/5 backdrop-blur-sm py-3 overflow-hidden">
+      <div id="marquee" className="absolute bottom-[-36px] left-0 right-0 z-10 border-y border-primary/20 bg-primary/5 backdrop-blur-sm py-3 overflow-hidden">
         <div className="flex whitespace-nowrap animate-marquee gap-8">
           {[...TICKER, ...TICKER].map((item, i) => (
             <span
