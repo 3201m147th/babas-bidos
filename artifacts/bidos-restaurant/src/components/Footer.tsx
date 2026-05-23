@@ -38,7 +38,6 @@ export function Footer() {
             <ul className="space-y-3 font-sans text-sm text-muted-foreground">
               {[
                 { label: "Menu", id: "menu" },
-                { label: "Specials", id: "specials" },
                 { label: "Our Story", id: "story" },
                 { label: "Hours & Location", id: "hours" },
                 { label: "Order Online", id: "order" },
