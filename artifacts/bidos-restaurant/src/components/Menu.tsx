@@ -4,6 +4,7 @@ const CATEGORIES = [
   {
     id: "philly-steaks",
     label: "Philly Steaks",
+    emoji: "🥩",
     note: "All sandwiches served with fries",
     items: [
       { name: "Super Philly", price: "$14.99", desc: "Grilled steak or chicken with green peppers, mushrooms, onion, lettuce and mozzarella cheese." },
@@ -17,6 +18,7 @@ const CATEGORIES = [
   {
     id: "chicago-style",
     label: "Chicago Style",
+    emoji: "🌭",
     note: "Classic Chicago-inspired subs",
     items: [
       { name: "Italian Beef", price: "$11.99", desc: "Our original Chicago-style Italian beef slow-roasted, thinly sliced, seasoned with Italian spices and dipped in au jus. Come with hot or mild peppers." },
@@ -31,7 +33,8 @@ const CATEGORIES = [
   {
     id: "sandwiches",
     label: "Sandwiches",
-    note: "All sandwiches and burgers served with fries",
+    emoji: "🍗",
+    note: "All sandwiches served with fries",
     items: [
       { name: "Crispy Chicken — Single", price: "$9.99", desc: "Crispy fried chicken breast with lettuce, tomato, pickles and mayo." },
       { name: "Crispy Chicken — Double", price: "$11.99", desc: "Two crispy chicken breasts stacked high with all the fixings." },
@@ -47,6 +50,7 @@ const CATEGORIES = [
   {
     id: "burgers",
     label: "Burgers",
+    emoji: "🍔",
     note: "All burgers served with fries",
     items: [
       { name: "Italian Beef Burger", price: "Single $10.99 / Double $12.99 / Triple $14.99", desc: "100% fresh patties topped with Italian corned beef and American cheese with our signature Bido's burger sauce and a slice of melty American cheese." },
@@ -58,6 +62,7 @@ const CATEGORIES = [
   {
     id: "rice-bowls",
     label: "Rice Bowls",
+    emoji: "🍚",
     note: "A plate of rice topped with your choice of meat — loaded with jalapeños, white sauce, onion, lettuce & tomato",
     items: [
       { name: "Chicken Rice Bowl", price: "$11.99", desc: "Rice loaded with seasoned chicken, jalapeños, white sauce, onion, lettuce & tomato." },
@@ -68,7 +73,8 @@ const CATEGORIES = [
   },
   {
     id: "loaded",
-    label: "Loaded Fries & Nachos",
+    label: "Loaded",
+    emoji: "🧀",
     note: "A full plate loaded with the good stuff",
     items: [
       { name: "Loaded Fries", price: "$9.99", desc: "A full plate of fries topped with nacho cheese, jalapeños, sour cream, lettuce and tomato." },
@@ -78,6 +84,7 @@ const CATEGORIES = [
   {
     id: "wings",
     label: "Wings",
+    emoji: "🔥",
     note: "Served with fries",
     items: [
       { name: "3 pcs Wings", price: "$6.99", desc: "Three crispy wings, your choice of sauce." },
@@ -92,6 +99,7 @@ const CATEGORIES = [
   {
     id: "party-wings",
     label: "Party Wings",
+    emoji: "🎉",
     note: "For the big occasions",
     items: [
       { name: "4 pcs Party Wings", price: "$5.99", desc: "Four meaty party wings sauced up and ready." },
@@ -105,6 +113,7 @@ const CATEGORIES = [
   {
     id: "tenders-nuggets",
     label: "Tenders & Nuggets",
+    emoji: "🍤",
     note: "Served with fries",
     items: [
       { name: "Chicken Tenders 3 pcs", price: "$7.99", desc: "Three golden crispy chicken tenders with your dipping sauce." },
@@ -119,6 +128,7 @@ const CATEGORIES = [
   {
     id: "seafood",
     label: "Seafood",
+    emoji: "🐟",
     note: "Baba's signature seafood",
     items: [
       { name: "Catfish Fillet 2 pcs", price: "$8.99", desc: "Golden fried catfish fillets, light and flaky." },
@@ -139,6 +149,7 @@ const CATEGORIES = [
   {
     id: "salads",
     label: "Salads",
+    emoji: "🥗",
     note: "Fresh and crisp",
     items: [
       { name: "Regular Salad", price: "$6.99", desc: "Fresh garden salad with tomato, cucumber, onion and your choice of dressing." },
@@ -149,6 +160,7 @@ const CATEGORIES = [
   {
     id: "sides",
     label: "Sides & More",
+    emoji: "🍟",
     note: "Round out your meal",
     items: [
       { name: "Pizza Puff 1 pc", price: "$3.99", desc: "Deep-fried golden dough stuffed with pizza fillings. A Chicago classic." },
@@ -166,6 +178,7 @@ const CATEGORIES = [
   {
     id: "pick2",
     label: "Pick 2 Deals",
+    emoji: "💰",
     note: "Mix & match combos",
     items: [
       {
@@ -188,62 +201,76 @@ export function Menu() {
 
   return (
     <section id="menu" className="py-20 md:py-28 bg-background relative">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
 
-        <div className="text-center mb-12">
-          <h2 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider mb-4">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="text-center mb-14">
+          <p className="text-primary font-sans font-semibold uppercase tracking-[0.3em] text-sm mb-3">
+            Something for Everyone
+          </p>
+          <h2 className="font-display text-5xl md:text-7xl text-white uppercase tracking-wider">
             The <span className="text-primary glow-text">Menu</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-xl mx-auto mt-4">
             Bold, unapologetic, and crafted with obsession.
           </p>
         </div>
 
-        <div className="overflow-x-auto pb-3 mb-10">
+        <div className="overflow-x-auto pb-3 mb-10 scrollbar-hide">
           <div className="flex gap-2 min-w-max mx-auto w-fit">
             {CATEGORIES.map((cat) => (
               <button
                 key={cat.id}
                 data-testid={`tab-${cat.id}`}
                 onClick={() => setActiveId(cat.id)}
-                className={`px-4 py-2 rounded-full text-sm font-sans font-semibold uppercase tracking-wider whitespace-nowrap transition-all duration-200
+                className={`px-4 py-2 rounded-full text-sm font-sans font-semibold uppercase tracking-wider whitespace-nowrap transition-all duration-200 flex items-center gap-1.5
                   ${activeId === cat.id
-                    ? "bg-primary text-black shadow-[0_0_16px_hsl(var(--primary)/0.7)]"
-                    : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-white/10"
+                    ? "bg-primary text-black shadow-[0_0_20px_hsl(var(--primary)/0.6)]"
+                    : "bg-white/5 text-muted-foreground hover:bg-white/10 hover:text-white border border-white/8"
                   }`}
               >
-                {cat.label}
+                <span>{cat.emoji}</span>
+                <span>{cat.label}</span>
               </button>
             ))}
           </div>
         </div>
 
         <div key={activeId} className="animate-fade-in">
-          <div className="mb-8 border-b border-white/10 pb-4">
-            <h3 className="font-display text-3xl md:text-4xl text-white uppercase tracking-wide glow-text">
-              {active.label}
-            </h3>
-            {active.note && (
-              <p className="text-primary/80 text-sm font-sans mt-1 italic">{active.note}</p>
-            )}
+          <div className="mb-10 flex items-end justify-between border-b border-white/8 pb-5">
+            <div>
+              <h3 className="font-display text-4xl md:text-5xl text-white uppercase tracking-wide">
+                {active.emoji} {active.label}
+              </h3>
+              {active.note && (
+                <p className="text-primary/70 text-sm font-sans mt-1.5 italic">{active.note}</p>
+              )}
+            </div>
+            <a
+              href="https://order.toasttab.com/online/babas-bidos"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:inline-flex items-center gap-2 text-xs font-sans font-bold uppercase tracking-wider text-muted-foreground hover:text-primary transition-colors border border-white/8 hover:border-primary/30 px-4 py-2 rounded-full"
+            >
+              Order This →
+            </a>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-5">
             {active.items.map((item) => (
               <div
                 key={item.name}
                 data-testid={`menu-item-${item.name.toLowerCase().replace(/\s+/g, "-")}`}
-                className="group cursor-default"
+                className="group p-4 rounded-xl hover:bg-white/3 transition-colors border border-transparent hover:border-white/8 cursor-default"
               >
-                <div className="flex justify-between items-baseline mb-1">
+                <div className="flex justify-between items-baseline mb-1.5">
                   <h4 className="font-display text-xl text-foreground group-hover:text-primary transition-colors leading-tight">
                     {item.name}
                   </h4>
-                  <span className="font-sans font-bold text-primary whitespace-nowrap ml-4 text-sm">
+                  <span className="font-sans font-bold text-primary whitespace-nowrap ml-4 text-sm bg-primary/10 px-2 py-0.5 rounded-md">
                     {item.price}
                   </span>
                 </div>
-                <div className="w-full border-t border-white/10 border-dashed mb-2" />
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {item.desc}
                 </p>
@@ -252,6 +279,16 @@ export function Menu() {
           </div>
         </div>
 
+        <div className="mt-16 text-center">
+          <a
+            href="https://order.toasttab.com/online/babas-bidos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-black font-display text-2xl uppercase tracking-widest px-10 py-4 rounded-full transition-all hover:scale-105 hover:bg-primary/90 glow-box"
+          >
+            Order the Full Menu
+          </a>
+        </div>
       </div>
     </section>
   );
