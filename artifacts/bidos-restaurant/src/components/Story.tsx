@@ -33,10 +33,7 @@ export function Story() {
 
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                It started with a grill, a dream, and a neighborhood that was hungry for something real. Bido wasn't just a chef — he was a flavor fanatic who wouldn't let a dish leave the kitchen until it was undeniable.
-              </p>
-              <p>
-                Legend has it he spent three years perfecting the ultimate cheese pull and another two making sure the smoke hit the wings just right.
+                It started with a grill, a dream, and a neighborhood that was hungry for something real. Bido wasn't just a cook — he was a flavor fanatic who wouldn't let a dish leave the kitchen until it was undeniable.
               </p>
             </div>
 
