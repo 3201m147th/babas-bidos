@@ -1,5 +1,4 @@
 import logoPath from "@assets/EBCB8985-4767-402D-B185-129AEA065EE0_1779284615864.png";
-import flavorPath from "@assets/E4CDAD29-FDF7-41DA-9D41-4D0BCF0A83DD_1779284615864.png";
 
 export function Hero() {
   const scrollTo = (id: string) => {
@@ -10,18 +9,19 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/70 to-background z-10" />
-        <img
-          src={flavorPath}
-          alt=""
-          className="w-full h-full object-cover opacity-15 blur-sm scale-110"
-        />
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/hero.mov" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/80" />
       </div>
-
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-primary/8 rounded-full blur-[140px] z-0 pointer-events-none" />
-      <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-orange-600/5 rounded-full blur-[100px] z-0 pointer-events-none" />
 
       <div className="container relative z-10 px-4 flex flex-col items-center text-center mt-16">
         <div className="animate-float">
