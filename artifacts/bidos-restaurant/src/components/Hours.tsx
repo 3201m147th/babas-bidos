@@ -64,8 +64,8 @@ export function Hours() {
                 </div>
                 <div>
                   <p className="text-white font-semibold font-sans mb-0.5">Call Ahead</p>
-                  <a href="tel:+17739995555" className="text-primary text-sm hover:underline">
-                    (773) 999-5555
+                  <a href="tel:+17084009918" className="text-primary text-sm hover:underline">
+                    (708) 400-9918
                   </a>
                 </div>
               </div>
