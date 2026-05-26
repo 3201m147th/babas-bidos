@@ -78,11 +78,11 @@ export function Footer() {
                 babasbidos.com
               </a>
               <a
-                href="tel:+17739995555"
+                href="tel:+17084009918"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors font-sans"
               >
                 <span className="w-5 h-5 rounded bg-primary/10 flex items-center justify-center text-primary text-xs">☎</span>
-                (773) 999-5555
+                (708) 400-9918
               </a>
             </div>
           </div>
