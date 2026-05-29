@@ -27,6 +27,14 @@ export function Order() {
             Order Now
           </a>
           <a
+            href="https://www.toasttab.com/babas-bidos/rewardsSignup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-primary/60 text-primary font-display text-2xl uppercase tracking-widest px-10 py-5 rounded-full transition-all hover:scale-105 hover:bg-primary hover:text-black"
+          >
+            Bido's Rewards
+          </a>
+          <a
             href="tel:+17084009918"
             className="inline-block border border-white/20 text-white font-display text-2xl uppercase tracking-widest px-10 py-5 rounded-full transition-all hover:scale-105 hover:border-primary/50 hover:text-primary"
           >
