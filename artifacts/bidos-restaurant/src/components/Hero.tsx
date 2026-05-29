@@ -41,7 +41,7 @@ export function Hero() {
           Smoky, warm, and unapologetic.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 animate-in zoom-in fade-in duration-1000 delay-500">
+        <div className="flex flex-col sm:flex-row gap-3 mt-2">
           <a
             href="https://order.toasttab.com/online/babas-bidos"
             target="_blank"
