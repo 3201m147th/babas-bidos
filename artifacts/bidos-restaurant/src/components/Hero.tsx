@@ -9,7 +9,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-hidden bg-black">
+    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center overflow-x-hidden bg-black py-24">
       <div className="absolute inset-0 z-0">
         <video
           autoPlay
@@ -23,21 +23,21 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/80" />
       </div>
 
-      <div className="container relative z-10 px-4 flex flex-col items-center text-center mt-16">
+      <div className="container relative z-10 px-4 flex flex-col items-center text-center mt-8 md:mt-16">
         <div className="animate-float">
           <img
             src={logoPath}
             alt="Bido's Mascot"
-            className="w-40 h-40 md:w-64 md:h-64 mb-8 drop-shadow-[0_0_40px_rgba(252,163,17,0.6)]"
+            className="w-24 h-24 sm:w-40 sm:h-40 md:w-64 md:h-64 mb-4 md:mb-8 drop-shadow-[0_0_40px_rgba(252,163,17,0.6)]"
           />
         </div>
 
-        <h1 className="font-display text-7xl md:text-9xl lg:text-[10rem] text-white mb-4 uppercase tracking-wider leading-none animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-150">
+        <h1 className="font-display text-5xl sm:text-7xl md:text-9xl lg:text-[10rem] text-white mb-2 md:mb-4 uppercase tracking-wider leading-none animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-150">
           We Believe <br />
           <span className="text-primary glow-text">in Flavor.</span>
         </h1>
 
-        <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12 font-medium animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-300 tracking-wide">
+        <p className="text-base sm:text-lg md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-6 md:mb-12 font-medium animate-in slide-in-from-bottom-8 fade-in duration-1000 delay-300 tracking-wide">
           Smoky, warm, and unapologetic.
         </p>
 
