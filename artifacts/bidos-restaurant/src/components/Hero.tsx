@@ -50,6 +50,14 @@ export function Hero() {
           >
             Order Online
           </a>
+          <a
+            href="https://www.toasttab.com/babas-bidos/rewardsSignup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border border-primary/60 text-primary font-display text-2xl uppercase tracking-widest px-10 py-4 rounded-full transition-all hover:scale-105 hover:bg-primary hover:text-black backdrop-blur-sm"
+          >
+            Bido's Rewards
+          </a>
           <button
             onClick={() => scrollTo("menu")}
             className="border border-white/20 text-white font-display text-2xl uppercase tracking-widest px-10 py-4 rounded-full transition-all hover:scale-105 hover:border-primary/50 hover:text-primary backdrop-blur-sm"
