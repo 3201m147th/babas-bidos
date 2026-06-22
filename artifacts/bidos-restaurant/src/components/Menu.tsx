@@ -164,23 +164,6 @@ const CATEGORIES = [
       { name: "Frozen Lemonade", price: "$2.99", desc: "Lime, Grape, Peach, Orange, Blue Raspberry, Watermelon, Green Apple, Banana, Pina Colada, Coconut, Fruit Punch, Strawberry, Cherry, or Original." },
     ],
   },
-  {
-    id: "pick2",
-    label: "Pick 2 Deals",
-    note: "Mix & match combos",
-    items: [
-      {
-        name: "Pick 2 — $10 Deal",
-        price: "$10",
-        desc: "Choose any 2: 2 pc whole wings, 2 pc chicken tenders, 5 pc shrimp, 5 pc catfish nuggets, 1 pc fish, 1 pc pizza puff, 3 pc buffalo wings. Comes with one small fries.",
-      },
-      {
-        name: "Pick 2 — $15 Deal",
-        price: "$15",
-        desc: "Choose any 2: cheeseburger, gyro sandwich, philly sandwich, chicken sandwich, 4 pc whole wings, 6 pc buffalo wings, 2 pc catfish fillet, 10 pc shrimp, 3 pc chicken tenders. Comes with 2 small fries.",
-      },
-    ],
-  },
 ];
 
 export function Menu() {
