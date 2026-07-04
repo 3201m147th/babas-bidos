@@ -4,9 +4,26 @@ interface AnnouncementBannerProps {
   onHeightChange: (height: number) => void;
 }
 
+// Banner auto-hides after this date/time (local time). Update these values
+// to reuse this banner for a future temporary closure announcement.
+const EXPIRES_AT = new Date("2026-07-05T00:00:00");
+
 export function AnnouncementBanner({ onHeightChange }: AnnouncementBannerProps) {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(() => new Date() < EXPIRES_AT);
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!visible) return;
+
+    const msUntilExpiry = EXPIRES_AT.getTime() - Date.now();
+    if (msUntilExpiry <= 0) {
+      setVisible(false);
+      return;
+    }
+
+    const timer = setTimeout(() => setVisible(false), msUntilExpiry);
+    return () => clearTimeout(timer);
+  }, [visible]);
 
   useEffect(() => {
     if (!visible) {
