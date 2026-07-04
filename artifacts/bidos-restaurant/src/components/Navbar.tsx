@@ -1,7 +1,11 @@
 import { useEffect, useState } from "react";
 import logoPath from "@assets/EBCB8985-4767-402D-B185-129AEA065EE0_1779284615864.png";
 
-export function Navbar() {
+interface NavbarProps {
+  topOffset?: number;
+}
+
+export function Navbar({ topOffset = 0 }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -24,7 +28,8 @@ export function Navbar() {
   return (
     <>
       <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+        style={{ top: topOffset }}
+        className={`fixed w-full z-50 transition-all duration-300 ${
           scrolled
             ? "bg-background/95 backdrop-blur-md border-b border-white/8 py-3 shadow-2xl"
             : "bg-transparent py-5"
