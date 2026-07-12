@@ -1,10 +1,10 @@
 const HOURS = [
-  { day: "Monday", hours: "11:00 AM – 11:00 PM" },
-  { day: "Tuesday", hours: "11:00 AM – 11:00 PM" },
-  { day: "Wednesday", hours: "11:00 AM – 11:00 PM" },
-  { day: "Thursday", hours: "11:00 AM – 11:00 PM" },
-  { day: "Friday", hours: "11:00 AM – 11:00 PM" },
-  { day: "Saturday", hours: "11:00 AM – 11:00 PM" },
+  { day: "Monday", hours: "10:00 AM – 12:00 AM" },
+  { day: "Tuesday", hours: "10:00 AM – 12:00 AM" },
+  { day: "Wednesday", hours: "10:00 AM – 12:00 AM" },
+  { day: "Thursday", hours: "10:00 AM – 12:00 AM" },
+  { day: "Friday", hours: "10:00 AM – 1:00 AM" },
+  { day: "Saturday", hours: "10:00 AM – 1:00 AM" },
   { day: "Sunday", hours: "11:00 AM – 11:00 PM" },
 ];
 
@@ -130,6 +130,19 @@ export function Hours() {
                   </div>
                 );
               })}
+            </div>
+
+            <div className="px-6 py-4 border-t border-white/8 bg-primary/5 flex items-start gap-3">
+              <svg className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+              </svg>
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                <span className="text-primary font-semibold">Lobby hours:</span> Our dining room closes at{" "}
+                <span className="text-white font-medium">11:00 PM</span> Mon–Sat.{" "}
+                On <span className="text-white font-medium">Sunday</span>, the lobby closes at{" "}
+                <span className="text-white font-medium">9:00 PM</span>.{" "}
+                Drive-thru &amp; online ordering remain available until close.
+              </p>
             </div>
           </div>
         </div>
