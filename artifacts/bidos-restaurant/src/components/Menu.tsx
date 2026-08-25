@@ -91,19 +91,6 @@ const CATEGORIES = [
     ],
   },
   {
-    id: "party-wings",
-    label: "Party Wings",
-    note: "For the big occasions",
-    items: [
-      { name: "4 pcs Party Wings", price: "$5.99", desc: "Four meaty party wings sauced up and ready." },
-      { name: "6 pcs Party Wings", price: "$6.99", desc: "Six party wings to kick things off." },
-      { name: "10 pcs Party Wings", price: "$10.99", desc: "Ten party wings — a solid spread." },
-      { name: "20 pcs Party Wings", price: "$19.99", desc: "Twenty party wings to get the celebration started right." },
-      { name: "50 pcs Party Wings", price: "$44.99", desc: "Fifty party wings for a real gathering." },
-      { name: "100 pcs Party Wings", price: "$80.99", desc: "One hundred wings. The full legendary party package." },
-    ],
-  },
-  {
     id: "tenders-nuggets",
     label: "Tenders & Nuggets",
     note: "Served with fries",
