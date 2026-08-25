@@ -36,27 +36,29 @@ export function Navbar({ topOffset = 0 }: NavbarProps) {
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <div
-            className="flex items-center gap-3 cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
-            <img
-              src={logoPath}
-              alt="Bido's Logo"
-              className="h-10 w-10 md:h-12 md:w-12 object-contain drop-shadow-md"
-            />
-            <span className="font-display text-2xl tracking-wider text-primary hidden sm:block glow-text">
-              BIDO'S
-            </span>
-          </div>
-
-          <div className="hidden md:flex items-center gap-6 md:gap-8 font-sans font-medium text-sm md:text-base">
+          <div className="flex items-center gap-4">
+            <div
+              className="flex items-center gap-3 cursor-pointer"
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            >
+              <img
+                src={logoPath}
+                alt="Bido's Logo"
+                className="h-10 w-10 md:h-12 md:w-12 object-contain drop-shadow-md"
+              />
+              <span className="font-display text-2xl tracking-wider text-primary hidden sm:block glow-text">
+                BIDO'S
+              </span>
+            </div>
             <button
               onClick={() => scrollTo("menu")}
-              className="text-muted-foreground hover:text-primary transition-colors"
+              className="font-sans text-sm font-semibold uppercase tracking-wider text-primary hover:text-primary/80 transition-colors"
             >
               Menu
             </button>
+          </div>
+
+          <div className="hidden md:flex items-center gap-6 md:gap-8 font-sans font-medium text-sm md:text-base">
             <button
               onClick={() => scrollTo("story")}
               className="text-muted-foreground hover:text-primary transition-colors"
