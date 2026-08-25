@@ -58,12 +58,14 @@ export function Hero() {
           >
             Bido's Rewards
           </a>
-          <button
-            onClick={() => scrollTo("menu")}
+          <a
+            href="https://maps.google.com/?q=3201+147th+St,+Midlothian,+IL+60445"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-white/20 text-white font-display text-2xl uppercase tracking-widest px-10 py-4 rounded-full transition-all hover:scale-105 hover:border-primary/50 hover:text-primary backdrop-blur-sm"
           >
-            See the Menu
-          </button>
+            Get Directions
+          </a>
         </div>
       </div>
 
