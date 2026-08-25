@@ -1,4 +1,4 @@
-import specialsImage from "@assets/IMG_9585_1786156897424.jpeg";
+import specialsImage from "@assets/IMG_9585_1787677464832.png";
 
 export function DailySpecials() {
   return (
