@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Hero } from "@/components/Hero";
 import { Story } from "@/components/Story";
+import { DailySpecials } from "@/components/DailySpecials";
 import { Menu } from "@/components/Menu";
 import { Hours } from "@/components/Hours";
 import { Order } from "@/components/Order";
@@ -18,6 +19,7 @@ export default function Home() {
       <main>
         <Hero />
         <Story />
+        <DailySpecials />
         <Menu />
         <Hours />
         <Order />
