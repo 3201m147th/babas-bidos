@@ -139,8 +139,8 @@ const CATEGORIES = [
     label: "Sides & More",
     note: "Round out your meal",
     items: [
-      { name: "Pizza Puff 1 pc", price: "$3.99", desc: "Deep-fried golden dough stuffed with pizza fillings. A Chicago classic." },
-      { name: "Pizza Puff 2 pc", price: "$7.99", desc: "Two deep-fried pizza puffs — double the classic Chicago treat." },
+      { name: "Pizza Puff 1 pc", price: "$5.99", desc: "Deep-fried golden dough stuffed with pizza fillings. A Chicago classic." },
+      { name: "Pizza Puff 2 pc", price: "$9.99", desc: "Two deep-fried pizza puffs — double the classic Chicago treat." },
       { name: "Cheese Sticks", price: "$3.99", desc: "Crispy breaded mozzarella sticks with marinara dipping sauce." },
       { name: "Onion Rings", price: "$3.99", desc: "Thick-cut crispy battered onion rings." },
       { name: "Coleslaw", price: "$3.49", desc: "Creamy house-made coleslaw — the perfect cool side." },
