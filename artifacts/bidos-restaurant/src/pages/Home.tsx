@@ -4,6 +4,7 @@ import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Hero } from "@/components/Hero";
 import { Story } from "@/components/Story";
 import { DailySpecials } from "@/components/DailySpecials";
+import { Promotion } from "@/components/Promotion";
 import { Menu } from "@/components/Menu";
 import { Hours } from "@/components/Hours";
 import { Order } from "@/components/Order";
@@ -20,6 +21,7 @@ export default function Home() {
         <Hero />
         <Story />
         <DailySpecials />
+        <Promotion />
         <Menu />
         <Hours />
         <Order />
