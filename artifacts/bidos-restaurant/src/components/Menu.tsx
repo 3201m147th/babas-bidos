@@ -2,6 +2,20 @@ import { useState } from "react";
 
 const CATEGORIES = [
   {
+    id: "daily-special",
+    label: "Daily Special",
+    note: "Great food. Great deals. Available on the listed day.",
+    items: [
+      { name: "Monday Special", price: "$7.99", desc: "A gyro sandwich or chicken on pita. Includes fries and a can pop." },
+      { name: "Tuesday Special", price: "$8.99", desc: "6 wings with fries and frozen lemonade." },
+      { name: "Wednesday Special", price: "$8.99", desc: "2 pizza puffs with fries and frozen lemonade." },
+      { name: "Thursday Special", price: "$11.99", desc: "Italian beef with fries and frozen lemonade." },
+      { name: "Friday Special", price: "$13.99", desc: "3 wings and 10 shrimp combo with fries and a can pop." },
+      { name: "Saturday Special", price: "$18.99", desc: "20 wings with fries." },
+      { name: "Sunday Special", price: "$32.99", desc: "5 catfish fillets, 10 wings, and 15 shrimp combo with fries." },
+    ],
+  },
+  {
     id: "philly-steaks",
     label: "Philly Steaks",
     note: "All sandwiches served with fries",
@@ -149,20 +163,6 @@ const CATEGORIES = [
       { name: "Cheese / Garlic / Buffalo Fries", price: "+$1.99", desc: "Upgrade any fries to cheese, garlic, or buffalo style." },
       { name: "By the Pan — Fries or Onion Rings", price: "$15", desc: "A full pan of fries or onion rings — built for the crowd." },
       { name: "Frozen Lemonade", price: "$2.99", desc: "Lime, Grape, Peach, Orange, Blue Raspberry, Watermelon, Green Apple, Banana, Pina Colada, Coconut, Fruit Punch, Strawberry, Cherry, or Original." },
-    ],
-  },
-  {
-    id: "daily-special",
-    label: "Daily Special",
-    note: "Great food. Great deals. Available on the listed day.",
-    items: [
-      { name: "Monday Special", price: "$7.99", desc: "A gyro sandwich or chicken on pita. Includes fries and a can pop." },
-      { name: "Tuesday Special", price: "$8.99", desc: "6 wings with fries and frozen lemonade." },
-      { name: "Wednesday Special", price: "$8.99", desc: "2 pizza puffs with fries and frozen lemonade." },
-      { name: "Thursday Special", price: "$11.99", desc: "Italian beef with fries and frozen lemonade." },
-      { name: "Friday Special", price: "$13.99", desc: "3 wings and 10 shrimp combo with fries and a can pop." },
-      { name: "Saturday Special", price: "$18.99", desc: "20 wings with fries." },
-      { name: "Sunday Special", price: "$32.99", desc: "5 catfish fillets, 10 wings, and 15 shrimp combo with fries." },
     ],
   },
 ];
