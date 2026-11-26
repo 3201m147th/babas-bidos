@@ -5,7 +5,7 @@ interface AnnouncementBannerProps {
 }
 
 // Banner auto-hides after this date/time (local time).
-const EXPIRES_AT = new Date("2026-09-08T00:00:00");
+const EXPIRES_AT = new Date("2026-11-27T00:00:00");
 
 export function AnnouncementBanner({ onHeightChange }: AnnouncementBannerProps) {
   const [visible, setVisible] = useState(() => new Date() < EXPIRES_AT);
@@ -47,7 +47,7 @@ export function AnnouncementBanner({ onHeightChange }: AnnouncementBannerProps) 
     <div ref={ref} className="fixed top-0 w-full z-[60] bg-primary text-black">
       <div className="container mx-auto px-4 md:px-6 py-2.5 flex items-center justify-center gap-3 text-center">
         <p className="font-sans font-bold text-xs sm:text-sm tracking-wide uppercase">
-          Labor Day hours: 10:00 AM – 3:00 PM
+          We are closed today. Wishing all our guests a Happy Thanksgiving!
         </p>
         <button
           onClick={() => setVisible(false)}
