@@ -3,7 +3,6 @@ import { Navbar } from "@/components/Navbar";
 import { AnnouncementBanner } from "@/components/AnnouncementBanner";
 import { Hero } from "@/components/Hero";
 import { Story } from "@/components/Story";
-import { DailySpecials } from "@/components/DailySpecials";
 import { Promotion } from "@/components/Promotion";
 import { Menu } from "@/components/Menu";
 import { Hours } from "@/components/Hours";
@@ -20,7 +19,6 @@ export default function Home() {
       <main>
         <Hero />
         <Story />
-        <DailySpecials />
         <Promotion />
         <Menu />
         <Hours />
